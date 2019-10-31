@@ -5,3 +5,8 @@ jdk:
 
 after_success:
   - mvn test
+
+notifications:
+  email:
+    recipients:
+      s.bradshaw1@nuigalway.ie
