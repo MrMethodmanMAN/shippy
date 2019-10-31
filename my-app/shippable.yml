@@ -2,3 +2,14 @@
 languge: java
 
 jdk: oraclejdk8
+
+before_install:
+  - mvn clean install
+
+after_sucess:
+  - mvn test
+
+notifications:
+  email:
+    recipients:
+      s.bradshaw1@nuigalway.ie
